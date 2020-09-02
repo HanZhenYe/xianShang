@@ -1,0 +1,53 @@
+
+.x-top{
+    background-color: #222;
+    z-index: 100;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.x-top>.container>.navbar{
+    border: none;
+}
+.ul-zi{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+.ul-zi>li{
+    float: left;
+    width: 205px;
+    height: 195px;
+    margin: 0 11px 10px 11px;
+}
+.zi-img{
+    height: 150px;
+}
+.zi-img>img,.ziyuan-img>img{
+    width: 100%;
+    height: 100%;
+}
+.ul-ziyuan{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.ul-ziyuan>li{
+    float: left;
+    width: 253px;
+    height: 256px;
+    margin: 0 16px 10px 15px;
+}
+.ul-ziyuan>li>a{
+    text-decoration:none;
+}
+.ziyuan-img{
+    height: 150px;
+}
+a:focus {
+    outline:none;
+}

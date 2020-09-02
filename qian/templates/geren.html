@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="/media/css/geren.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body style="overflow:scroll;">
+    
+     <!-- 导航栏 -->
+     <div class="x-top">
+        <div class="container">
+                <nav class="navbar  navbar-inverse" role="navigation">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/index">线上学习网</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/res/area">资源区</a></li>
+                        <li class="active"><a href="/user">个人中心</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:quit();"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+                    </ul>
+                    </div>
+                </nav>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+<div class="container">
+    <div id="container-mai"></div>
+   <div class="row">
+       <!-- 用户信息框 -->
+       <div class="col-md-12 row-xin">
+            <div class="row">
+                <div class="col-md-2 row-xin">
+                    <img id="portrait" src="" >
+                </div>
+                <div class="col-md-10 row-xin">
+                    <button  id="user-btn-xiu" type="button" class="btn btn-info pull-xiu">修改</button>
+                    <table class="table table-striped">
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+       </div>
+     
+       <!--资源管理条  -->
+       <div class="col-md-12" style=" margin-top: 20px;">
+           <div class="row">
+            <div class="col-md-2" style="background-color: #222; color: #fff;">
+                <h4>资 源 列 表</h4>
+            </div>
+            <div class="col-md-10" style="background-color: #222; color: #fff;">
+                 <h4 style="display: inline-block;">列表内容</h4>
+                 <button id="create-btn" type="button" class="btn btn-primary pull-right" 
+                                   style="margin-top: 3px;">创建</button>
+             </div>
+           </div>
+       </div>
+   
+       <!-- 资源管理 -->
+       <div class="col-md-12 xx" >
+            <div class="row">
+                <!-- 资源管理导航 -->
+                <div class="col-md-2" style="border-right: solid 1px #eee;">
+                    <ul id="myTab" class="nav nav-tabs nav-stacked">
+                        <li class="active"><a href="#my_occ" data-toggle="tab">
+                            <span class="glyphicon glyphicon-briefcase gly-span"></span>我的职业</a></li>
+                        <li><a href="#my_cour_series" data-toggle="tab">
+                            <span class="glyphicon glyphicon-align-justify gly-span"></span>我的系列</a></li>
+                        <li><a href="#my_cour" data-toggle="tab">
+                            <span class="glyphicon glyphicon-align-left gly-span"></span>我的课程</a></li>
+                        <li><a href="#my_reso" data-toggle="tab">
+                            <span class="glyphicon glyphicon-gift gly-span"></span>我的资源</a></li>
+                        <li><a href="#coll_occ" data-toggle="tab">
+                            <span class="glyphicon glyphicon-briefcase gly-span"></span>收藏的职业</a></li>
+                        <li><a href="#coll_cour_series" data-toggle="tab">
+                            <span class="glyphicon glyphicon-align-justify gly-span"></span>收藏的系列</a></li>
+                        <li><a href="#coll_cour" data-toggle="tab">
+                            <span class="glyphicon glyphicon-align-left gly-span"></span>收藏的课程</a></li>
+                        <li><a href="#coll_reso" data-toggle="tab">
+                            <span class="glyphicon glyphicon-gift gly-span"></span>收藏的资源</a></li>
+                    </ul>
+                </div>
+
+                <!-- 内容区 -->
+                <div class="col-md-10" style="background-color: #fff;" >
+                    <div id="myTabContent" class="tab-content">
+                        
+                        <!-- 我的职业 -->
+                        <div class="tab-pane fade in active" id="my_occ">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                        <!-- 我的系列 -->
+                        <div class="tab-pane fade" id="my_cour_series">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                        <!-- 我的课程 -->
+                        <div class="tab-pane fade" id="my_cour">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                        <!-- 我的资源 -->
+                        <div class="tab-pane fade" id="my_reso">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                         <!-- 收藏的职业 -->
+                         <div class="tab-pane fade" id="coll_occ">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                         <!-- 收藏的系列 -->
+                         <div class="tab-pane fade" id="coll_cour_series">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+
+                         <!-- 收藏的课程 -->
+                         <div class="tab-pane fade" id="coll_cour">
+                            <ul class="ul-paul"></ul>
+                        </div>
+
+                         <!-- 收藏的资源 -->
+                         <div class="tab-pane fade" id="coll_reso">
+                            <ul class="ul-paul" ></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 模态框组 -->
+        <div>
+
+            <!-- 用户信息修改 -->
+            <div class="modal fade"  id="user-mo" tabindex="-1" role="dialog" 
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="width: 650px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">用户信息修改</h4>
+                        </div>
+                        <div class="modal-body han">
+                            <div id="user-xin-fu" class="user-img">
+                                <img id="user-img1" src="">
+                                <label type="button" class="btn btn-info user-tou" for="user-file">更换头像</label>
+                            </div>
+                            <div class="user-xin">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">姓名:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" placeholder="请输入用户名">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">性别:</label>
+                                        <div class="col-sm-10">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="age" value="age1"> 男
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="age" value="age2" > 女
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">生日:</label>
+                                        <div class="col-sm-10">
+                                            <input type="date" value=""/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="user-btn" type="button" class="btn btn-primary">确认修改</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源创建模态栏 -->
+            <div class="modal fade" id="create-res" tabindex="-1" role="dialog" 
+                     aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog"  style="width: 650px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">创建类型
+                                <select id="select-res" class="form-control" style="display: inline-block; width: 125px;">
+                                    <option value="occ">职业</option>
+                                    <option value="cour">课程</option>
+                                    <option value="cour_series">课程系列</option>
+                                    <option value="res">资源链接</option>
+                                </select>
+                            </h4>
+                        </div>
+                        <div class="modal-body han">
+                            <div  id="file-tian" class="user-res">
+                                <img id='res-img' src="" alt="点击更换封面，进行封面选择">
+                                <label type="button" class="btn btn-info user-tou" for="res-cover">更换封面</label>
+                            </div>
+                            <div class="user-xin">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">标题:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" placeholder="请输入标题" maxlength="18">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">简介:</label>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <textarea id="create-synopsys" class="form-control" rows="3" maxlength="120" 
+                                                                        style="width: 328px;"
+                                                                        placeholder="资源简介/120字"></textarea>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="create-res-btn" type="button" class="btn btn-primary">创建</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<script src="/media/js/zhu.js"></script>
+<script src="/media/js/geren.js"></script>
+
+</body>
+</html>

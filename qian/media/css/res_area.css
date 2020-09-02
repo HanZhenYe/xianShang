@@ -1,0 +1,38 @@
+
+.x-top{
+    background-color: #222;
+    z-index: 100;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.x-top>.container>.navbar{
+    border: none;
+}
+.ul-ziyuan{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.ul-ziyuan>li{
+    float: left;
+    width: 253px;
+    height: 256px;
+    margin: 0 12px 10px 12px;
+}
+.ul-ziyuan>li>a{
+    text-decoration:none;
+}
+.ziyuan-img{
+    height: 150px;
+}
+.ziyuan-img>img{
+    width: 100%;
+    height: 100%;
+}
+a:focus{
+    outline:none;
+}

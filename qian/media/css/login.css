@@ -1,0 +1,54 @@
+
+.x-top{
+    background-color: #222;
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    border: none;
+}
+.login{
+    border: solid 1px #eee;
+    border-radius: 8px;
+    background-color: #eee;
+    width: 500px;
+    height: 260px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -250px;
+}
+.login-title{
+    border-radius: 8px;
+    text-align: center;
+    background: #f3f3f3;
+    padding: 5px;
+}
+.logib-xin{
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    margin-left: 25px;
+}
+.input-group-yan>span:hover{
+    cursor: pointer;
+}
+.login-gon{
+    margin-top: 20px;
+}
+.login-p{
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    color: #fff;
+}
+.btn-dui{
+    float: right;
+    font-size: 15px;
+}
+a:focus {
+    outline:none;
+}

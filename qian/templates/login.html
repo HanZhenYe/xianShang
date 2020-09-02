@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <link rel="stylesheet" href="/media/css/login.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color: #0ca3d2;">
+    <!-- 导航栏 -->
+    <div class="x-top">
+        <div class="container">
+                <nav class="navbar  navbar-inverse" role="navigation">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/index">线上学习网</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/res/area">资源区</a></li>
+                        <li><a href="/user">个人中心</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:;"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+                    </ul>
+                    </div>
+                </nav>
+        </div>
+    </div>
+
+    <!-- 登陆框 -->
+    <div class="container">
+        <div class="login">
+            <p class="lead login-title">用户登陆</p>
+            <div class="logib-xin">
+                <form class="bs-example bs-example-form" role="form">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                        <input id="qq" type="text" class="form-control" placeholder="请输入QQ号" maxlength="12">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-barcode"></span>
+                        </span>
+                        <input id="shu-yan" type="text" class="form-control" placeholder="请输入验证码"  
+                                        maxlength="6"
+                                        readonly="readonly">
+                        <span class="input-group-addon">
+                            <span id="img-huo">获得验证码</span>
+                            <span id="tai" data-toggle="modal" data-target="#myModal" style="display: none;">模态框</span>
+                        </span>
+                    </div>
+                    <div class="login-gon">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="zhuang-tai" > 记住登陆状态
+                        </label>
+                        <button id="btn-login" type="button" class="btn btn-primary btn-lg btn-dui">登陆</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-p">
+                <span class="label label-info">提示：</span>
+                <span>验证码将发送至您的QQ邮箱</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 态度框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+            aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">请完成安全验证</h4>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <a id='img-tu' href="javascript:;">
+                        <img src="" alt="验证码获取失败">
+                    </a>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="input-group">
+                        <input id="img-yan1" 
+                                    type="text" 
+                                    class="form-control" 
+                                    placeholder="请输入图中字母/不区分大小写"
+                                    maxlength="4">
+                        <span class="input-group-addon input-group-yan">
+                            <span id="img-yan">验证</span>
+                            <span id="img-yan2" data-loading-text="安全验证中..." ></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/media/js/zhu.js"></script>
+    <script src="/media/js/login.js"></script>
+</body>
+</html>

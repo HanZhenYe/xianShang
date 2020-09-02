@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源信息</title>
+    <link rel="stylesheet" href="/media/css/res.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body style="overflow:scroll;">
+    
+     <!-- 导航栏 -->
+     <div class="x-top">
+        <div class="container">
+                <nav class="navbar  navbar-inverse" role="navigation">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/index">线上学习网</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/res/area">资源区</a></li>
+                        <li><a href="/user">个人中心</a></li>
+                    </ul>
+                        <ul id="user-state" class="nav navbar-nav navbar-right"></ul>
+                    </div>
+                </nav>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <!-- 课程信息 -->
+            <div class="col-md-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <span id="cour-title" class="panel-title"></span>
+                            <a id="shou" class="text-warning" href="javascript:;"></a>
+                        </div>
+                        <div id="cour-synopsys" class="panel-body zhiye-nei"></div>
+                        <div class="panel-footer" style="overflow: hidden;">
+                            <span class="glyphicon glyphicon-star"></span> 
+                            <span id="cour-collection"></span>
+                            <span class="glyphicon glyphicon-user" style="margin-left: 25px;"></span> 
+                            <span id="cour-name"></span>
+                            <button type="button" class="btn btn-warning pull-right">举报</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well well-sm" style="overflow: hidden;">点击跳转，进行资源链接的跳转
+                    <a id="res-link" class="btn btn-warning pull-right" href="#" target="_blank">资源跳转</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/media/js/zhu.js"></script>
+    <script src="/media/js/res.js"></script>
+    
+</body>
+</html>

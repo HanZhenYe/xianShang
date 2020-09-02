@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源区</title>
+    <link rel="stylesheet" href="/media/css/res_area.css">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+     <!-- 导航栏 -->
+     <div class="x-top">
+        <div class="container">
+                <nav class="navbar  navbar-inverse" role="navigation">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/index">线上学习网</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/res/area">资源区</a></li>
+                        <li><a href="/user">个人中心</a></li>
+                    </ul>
+                    <ul id="user-state" class="nav navbar-nav navbar-right">
+                    </ul>
+                    </div>
+                </nav>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                       
+                        <ul class="nav nav-tabs">
+                            <li id="newe"><a href="javascript:qie(0, 1);">最新创建</a></li>
+                            <li id="coll"><a href="javascript:qie(1, 1);">最多收藏</a></li>
+                            <li class="dropdown">
+                                <a id="res" class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                                    职业<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:res('occ', 1);">职业</a></li>
+                                    <li><a href="javascript:res('cos', 1);">系列</a></li>
+                                    <li><a href="javascript:res('cou', 1);">课程</a></li>
+                                    <li><a href="javascript:res('res', 1);">资源</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="panel-body">
+                        <ul class="ul-ziyuan"></ul>
+                    </div>
+                    <div class="panel-footer" style="text-align: center;">
+                        <ul id="paging" class="pagination pagination-lg">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/media/js/zhu.js"></script>
+    <script src="/media/js/res_area.js"></script>
+
+</body>
+</html>
